@@ -3,6 +3,8 @@ name: Amazon-EKS
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - '**/*.md' 
     
 jobs:
   apply-plan:
